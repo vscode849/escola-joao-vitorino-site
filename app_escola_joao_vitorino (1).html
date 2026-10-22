@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#97151d" />
+  <title>Escola João Vitorino Marques</title>
+  <style>
+    :root{--red:#a81720;--red2:#d32631;--navy:#102b40;--blue:#17608a;--ink:#17212b;--muted:#687783;--paper:#f4f6f8;--white:#fff;--line:#e5e9ed;--green:#17815d}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    button{font:inherit;cursor:pointer}.topbar{background:linear-gradient(115deg,#0d2639,#153f5c);color:white;padding:18px max(20px,calc((100% - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:18px;box-shadow:0 3px 12px #102b4026}
+    .brand{display:flex;align-items:center;gap:13px}.crest{width:48px;height:48px;border:2px solid #ffffffb8;border-radius:14px;display:grid;place-items:center;font-size:25px}.brand h1{font-size:clamp(17px,2.5vw,24px);line-height:1.15;margin:0}.brand p,.course p{margin:4px 0 0;color:#d5e0e7;font-size:13px}.course{border-left:1px solid #ffffff55;padding-left:20px;min-width:200px}.course strong{font-size:15px}.wrap{max-width:1120px;margin:24px auto;padding:0 18px}.welcome{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px}.welcome h2{margin:0;font-size:24px}.welcome p{margin:5px 0 0;color:var(--muted)}.today{color:#526371;font-size:13px;white-space:nowrap}
+    .layout{display:grid;grid-template-columns:230px 1fr;gap:20px}.side,.panel,.tile{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 16px #1225380a}.side{padding:14px;height:max-content}.side-label{margin:5px 10px 10px;color:#8a96a0;text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:800}.nav{width:100%;border:0;background:transparent;text-align:left;color:#344451;padding:12px;border-radius:11px;display:flex;align-items:center;gap:11px;margin:3px 0;font-weight:650}.nav:hover,.nav.active{background:#fcebed;color:var(--red)}.ico{width:24px;text-align:center;font-size:18px}.main{min-width:0}.hero{background:linear-gradient(110deg,var(--red),#c72931);color:white;border-radius:17px;padding:21px 24px;margin-bottom:18px;display:flex;justify-content:space-between;align-items:center;gap:16px}.hero h3{font-size:20px;margin:0 0 5px}.hero p{margin:0;color:#ffeaeb;font-size:14px}.hero-mark{font-size:36px;opacity:.9}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.tile{padding:18px 16px;text-align:left;transition:transform .15s,box-shadow .15s;border:1px solid var(--line);color:var(--ink);min-height:125px}.tile:hover{transform:translateY(-2px);box-shadow:0 8px 18px #12253814}.tile-icon{width:42px;height:42px;border-radius:12px;background:#fff0f1;display:grid;place-items:center;color:var(--red);font-size:21px;margin-bottom:12px}.tile strong{display:block;font-size:15px}.tile small{display:block;color:var(--muted);margin-top:4px;font-size:12px}.pill{display:inline-block;background:#ffe0e2;color:#9c1820;font-size:10px;font-weight:800;padding:3px 7px;border-radius:20px;margin-left:5px;vertical-align:1px}.panel{padding:19px;margin-top:18px}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:13px}.panel h3{font-size:17px;margin:0}.text-button{border:0;background:none;color:var(--red);font-weight:700;font-size:13px}.notice{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line)}.notice:first-of-type{border-top:0}.notice-icon{width:36px;height:36px;border-radius:11px;background:#fcebed;display:grid;place-items:center;flex:0 0 36px}.notice strong{font-size:14px}.notice p{font-size:13px;color:var(--muted);margin:3px 0}.date{font-size:11px;color:#8c98a1;margin-top:4px}.student-card{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px}.student-title{font-size:14px;font-weight:800;margin-bottom:12px}.students{display:flex;flex-wrap:wrap;gap:8px}.student{background:#eef3f7;color:#294254;border-radius:999px;padding:8px 12px;font-size:13px;font-weight:650}.footer{text-align:center;color:#87939c;font-size:12px;padding:22px 10px 10px}.content-view{display:none}.content-view.show{display:block}.empty{padding:28px;text-align:center;color:var(--muted)}
+    @media(max-width:760px){.topbar{padding:14px 16px}.course{display:none}.wrap{margin:18px auto;padding:0 13px}.layout{grid-template-columns:1fr;gap:12px}.side{display:flex;overflow:auto;padding:8px;gap:4px}.side-label{display:none}.nav{white-space:nowrap;width:auto;padding:9px 11px;font-size:13px}.nav .ico{font-size:16px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.tile{min-height:115px;padding:14px}.welcome h2{font-size:21px}.today{font-size:11px}.hero{padding:18px}.hero-mark{font-size:28px}}
+    @media(max-width:390px){.grid{grid-template-columns:1fr 1fr}.brand p{font-size:11px}.crest{width:42px;height:42px}.welcome{align-items:flex-start;flex-direction:column;gap:5px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><div class="crest" aria-hidden="true">📖</div><div><h1>Escola João Vitorino Marques</h1><p>Mais que uma escola, um futuro melhor.</p></div></div>
+    <div class="course"><strong>Desenvolvimento Local — UC 4</strong><p>Desafio: Melhorar a Solução</p></div>
+  </header>
+  <div class="wrap">
+    <div class="welcome"><div><h2>Olá, aluno! 👋</h2><p>Acompanhe as novidades e sua vida escolar.</p></div><div class="today" id="today"></div></div>
+    <div class="layout">
+      <aside class="side" aria-label="Menu principal">
+        <div class="side-label">Menu</div>
+        <button class="nav active" data-view="inicio"><span class="ico">⌂</span>Início</button>
+        <button class="nav" data-view="avisos"><span class="ico">📣</span>Avisos</button>
+        <button class="nav" data-view="calendario"><span class="ico">▦</span>Calendário</button>
+        <button class="nav" data-view="notas"><span class="ico">📝</span>Notas</button>
+        <button class="nav" data-view="frequencia"><span class="ico">✓</span>Frequência</button>
+        <button class="nav" data-view="contato"><span class="ico">☎</span>Contato</button>
+      </aside>
+      <main class="main">
+        <section class="content-view show" id="view-inicio">
+          <div class="hero"><div><h3>Informação perto de você</h3><p>Fique por dentro dos avisos, datas e atividades da escola.</p></div><div class="hero-mark">🏫</div></div>
+          <div class="grid">
+            <button class="tile" data-go="avisos"><span class="tile-icon">🔔</span><strong>Notificações <span class="pill">2 novas</span></strong><small>Veja os comunicados recentes</small></button>
+            <button class="tile" data-go="calendario"><span class="tile-icon">🗓️</span><strong>Calendário</strong><small>Provas, reuniões e eventos</small></button>
+            <button class="tile" data-go="notas"><span class="tile-icon">📄</span><strong>Notas</strong><small>Acompanhe seu desempenho</small></button>
+            <button class="tile" data-go="frequencia"><span class="tile-icon">✅</span><strong>Frequência</strong><small>Consulte suas presenças</small></button>
+            <button class="tile" data-go="calendario"><span class="tile-icon">🎉</span><strong>Eventos</strong><small>Atividades da comunidade escolar</small></button>
+            <button class="tile" data-go="contato"><span class="tile-icon">👤</span><strong>Contato</strong><small>Fale com a escola</small></button>
+          </div>
+          <section class="panel"><div class="panel-head"><h3>📣 Avisos recentes</h3><button class="text-button" data-go="avisos">Ver todos</button></div>
+            <article class="notice"><div class="notice-icon">📚</div><div><strong>Bem-vindos ao aplicativo da escola!</strong><p>Aqui você pode acompanhar avisos, calendário, notas e frequência.</p><div class="date">Comunicado da escola</div></div></article>
+            <article class="notice"><div class="notice-icon">📅</div><div><strong>Confira o calendário escolar</strong><p>Consulte esta área para não perder provas, reuniões e eventos.</p><div class="date">Lembrete</div></div></article>
+          </section>
+          <section class="student-card"><div class="student-title">👥 Alunos participantes</div><div class="students"><span class="student">Pedro Henrique</span><span class="student">Evandro</span><span class="student">Kaike Godoi</span><span class="student">Dorilio</span><span class="student">Rufino</span></div></section>
+        </section>
+        <section class="content-view" id="view-avisos"><div class="panel"><div class="panel-head"><h3>📣 Avisos da escola</h3></div><article class="notice"><div class="notice-icon">📚</div><div><strong>Bem-vindos ao aplicativo da escola!</strong><p>Acompanhe por aqui os comunicados e novidades da Escola João Vitorino Marques.</p></div></article><article class="notice"><div class="notice-icon">📅</div><div><strong>Fique atento às datas</strong><p>Consulte o calendário para acompanhar provas, reuniões e eventos.</p></div></article></div></section>
+        <section class="content-view" id="view-calendario"><div class="panel"><h3>🗓️ Calendário escolar</h3><p class="empty">As datas de provas, reuniões e eventos serão divulgadas pela escola nesta área.</p></div></section>
+        <section class="content-view" id="view-notas"><div class="panel"><h3>📝 Notas</h3><p class="empty">As notas poderão ser consultadas aqui quando forem disponibilizadas pela escola.</p></div></section>
+        <section class="content-view" id="view-frequencia"><div class="panel"><h3>✅ Frequência</h3><p class="empty">Acompanhe suas presenças e frequência escolar nesta área.</p></div></section>
+        <section class="content-view" id="view-contato"><div class="panel"><h3>☎ Contato</h3><p class="empty">Entre em contato com a secretaria ou a equipe da Escola João Vitorino Marques.</p></div></section>
+      </main>
+    </div>
+    <footer class="footer">Escola João Vitorino Marques · Informação, conexão e um futuro melhor para todos!</footer>
+  </div>
+  <script>
+    const date=new Date(); document.getElementById('today').textContent=new Intl.DateTimeFormat('pt-BR',{weekday:'long',day:'numeric',month:'long'}).format(date);
+    function openView(name){document.querySelectorAll('.content-view').forEach(v=>v.classList.remove('show'));const target=document.getElementById('view-'+name);if(target)target.classList.add('show');document.querySelectorAll('.nav').forEach(b=>b.classList.toggle('active',b.dataset.view===name));window.scrollTo({top:0,behavior:'smooth'});}
+    document.querySelectorAll('.nav').forEach(b=>b.addEventListener('click',()=>openView(b.dataset.view)));
+    document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>openView(b.dataset.go)));
+  </script>
+</body>
+</html>
